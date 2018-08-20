@@ -2,6 +2,10 @@
   "name": "owlpath",
   "version": "0.1.0",
   "private": true,
+  "devDependencies": {
+    "ical.js": "1.2.2",
+    "node-fetch": "2.2.0"
+  },
   "scripts": {
     "dev": "scripts/serve.sh",
     "deploy": "scripts/deploy.sh",
