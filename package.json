@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "scripts/serve.sh",
+    "deploy": "scripts/deploy.sh",
     "update": "bundle update"
   }
 }

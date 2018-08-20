@@ -1,5 +1,5 @@
 async function getEvents() {
-  const result = await fetch("/static/calendar");
+  const result = await fetch("static/calendar");
   const text = await result.text();
   return new ICAL.Component(ICAL.parse(text))
     .getAllSubcomponents()
@@ -9,9 +9,7 @@ async function getEvents() {
 function renderEvents(events) {
   // Filter old events
   const now = new Date();
-  console.log(events);
   events = events.filter(event => event.endDate.toJSDate() > now);
-  console.warn(events);
 
   // Sort events by date
   events.sort((a, b) => a.startDate > b.startDate);
