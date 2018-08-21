@@ -9,7 +9,6 @@ const debug = debugModule('owlpath:cli');
 const packageJson = require('../package.json');
 
 const postTemplate = () => `---
-layout: post
 title:
 date: ${new Date().toISOString()}
 ---
