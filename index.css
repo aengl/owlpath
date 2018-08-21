@@ -10,6 +10,11 @@ body {
   font-size: 20px;
   color: hsl(200, 100%, 12%);
   margin: 2em;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -22,10 +27,17 @@ h1 {
   font-size: 2em;
   margin: 0;
   padding: 0;
+  line-height: 1.4;
 }
 
 img[data-gallery-source]:hover {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    margin: 0;
+  }
 }
 
 /* ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^
@@ -33,10 +45,11 @@ img[data-gallery-source]:hover {
  * ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^ */
 
 #schedule {
-  margin: 50px auto;
+  font-family: 'Amita', sans-serif;
   text-align: center;
   list-style: none;
-  font-family: 'Amita', sans-serif;
+  margin: 50px auto;
+  padding: 0;
 }
 
 #schedule li:first-child:before,
@@ -71,11 +84,18 @@ img[data-gallery-source]:hover {
   flex-wrap: wrap;
   justify-content: center;
   margin: 5em auto 5em;
+  padding: 0;
 }
 
 #instagram li {
-  height: 200px;
+  height: 220px;
   margin: 1px;
+}
+
+@media only screen and (max-width: 800px) {
+  #instagram li {
+    height: 48vw;
+  }
 }
 
 #instagram img {
@@ -90,9 +110,11 @@ img[data-gallery-source]:hover {
   max-width: 800px;
   list-style: none;
   margin: 5em auto 5em;
+  padding: 0;
 }
 
 #posts img {
+  width: 100%;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
@@ -107,6 +129,12 @@ img[data-gallery-source]:hover {
   font-size: 1em;
   text-align: justify;
   color: hsl(200, 20%, 30%);
+}
+
+@media only screen and (max-width: 800px) {
+  #posts {
+    margin: 1.2em;
+  }
 }
 
 /* ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^
