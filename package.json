@@ -4,7 +4,9 @@
   "private": true,
   "devDependencies": {
     "ical.js": "1.2.2",
-    "node-fetch": "2.2.0"
+    "js-yaml": "3.12.0",
+    "node-fetch": "2.2.0",
+    "puppeteer": "1.7.0"
   },
   "scripts": {
     "dev": "scripts/serve.sh",

@@ -36,3 +36,21 @@ body {
   content: "Soon:";
   margin-top: 1em;
 }
+
+#instagram {
+  display: flex;
+  max-width: 900px;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5em auto 5em;
+}
+
+#instagram li {
+  height: 200px;
+  margin: 1px;
+}
+
+#instagram img {
+  height: inherit;
+}

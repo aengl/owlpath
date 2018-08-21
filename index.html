@@ -4,6 +4,14 @@ layout: default
 
 <ul id="schedule">
   {% for event in site.data.schedule %}
-  <li>{{ event }}</li>
+    <li>{{ event }}</li>
+  {% endfor %}
+</ul>
+
+<ul id="instagram">
+  {% for post in site.data.instagram %}
+    <li>
+      <img srcset="{{ post.imageSourceSet }}" />
+    </li>
   {% endfor %}
 </ul>

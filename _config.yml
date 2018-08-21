@@ -8,6 +8,13 @@ url: https://aengl.github.io
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
+  - github-pages
+exclude:
+  - .chromium
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - yarn.lock
