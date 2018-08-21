@@ -8,5 +8,5 @@ git add _data/schedule.yml
 git add _posts/*
 
 # Commit & push
-git commit -m "Deploy"
+git commit -m "Update schedule & posts"
 git push
