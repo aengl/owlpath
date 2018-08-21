@@ -68,7 +68,7 @@ async function crawl() {
     });
     try {
       await page.click('a.coreSpriteRightPaginationArrow');
-      await page.waitFor(500);
+      await page.waitFor(1000);
     } catch (error) {
       break;
     }
