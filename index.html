@@ -11,7 +11,10 @@ layout: default
 <ul id="instagram">
   {% for post in site.data.instagram %}
     <li>
-      <img srcset="{{ post.imageSourceSet }}" />
+      <img
+        srcset="{{ post.thumbnail }}"
+        data-gallery-source="{{ post.imageSourceSet }}"
+        data-gallery-caption="{{ post.description | markdownify }}" />
     </li>
   {% endfor %}
 </ul>
@@ -29,3 +32,10 @@ layout: default
     </li>
   {% endfor %}
 </ul>
+
+<div id="gallery">
+  <div class="content">
+    <img />
+    <div class="caption"></div>
+  </div>
+</div>
