@@ -24,7 +24,7 @@ function writeEventData(events) {
   events.sort((a, b) => a.startDate > b.startDate);
 
   // Write schedule data
-  const data = events.map(event => `- ${event.summary}`).join('\n');
+  const data = events.map(event => `- ${event.summary}\n`).join('');
   const dataPath = path.resolve(__dirname, '..', '_data', 'schedule.yml');
   fs.writeFileSync(dataPath, data);
 }

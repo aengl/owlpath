@@ -12,5 +12,5 @@ git add _data/instagram.yml
 git add _posts/*
 
 # Commit & push
-git commit -m "Update schedule & posts"
+git commit -m "Update content"
 git push
