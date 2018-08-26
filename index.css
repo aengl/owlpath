@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Amita|Laila:300|Vesper+Libre');
 
 :root {
-  --opacity-faded: 0.4;
+  --primary-color: hsl(200, 100%, 12%);
+  --primary-color-faded: hsla(200, 100%, 12%, 0.4);
+  --primary-color-superfaded: hsla(200, 100%, 12%, 0.2);
 }
 
 body {
   font-family: 'Laila', serif;
   font-weight: 300;
   font-size: 20px;
-  color: hsl(200, 100%, 12%);
+  color: var(--primary-color);
   margin: 0;
   padding: 0;
 }
@@ -26,12 +28,22 @@ a {
   text-decoration: none;
 }
 
+p a {
+  color: darkorange;
+}
+
 h1 {
   font-family: 'Amita', sans-serif;
   font-size: 2em;
   margin: 0;
   padding: 0;
   line-height: 1.4;
+}
+
+blockquote {
+  border-left: 3px solid var(--primary-color-superfaded);
+  margin: 0;
+  padding: 0 0 0 0.5em;
 }
 
 img[data-gallery-source]:hover {
@@ -84,7 +96,7 @@ img[data-gallery-source]:hover {
 #schedule li:first-child:before,
 #schedule li:first-child:after {
   display: block;
-  opacity: var(--opacity-faded);
+  color: var(--primary-color-faded);
   font-size: 0.5em;
 }
 
@@ -138,8 +150,12 @@ img[data-gallery-source]:hover {
 #posts {
   max-width: 800px;
   list-style: none;
-  margin: 5em auto 5em;
+  margin: auto;
   padding: 0;
+}
+
+#posts li {
+  margin-top: 4em;
 }
 
 #posts img {
@@ -151,7 +167,7 @@ img[data-gallery-source]:hover {
 
 #posts time {
   font-size: 0.9em;
-  opacity: var(--opacity-faded);
+  color: var(--primary-color-faded);
 }
 
 #posts .content {
