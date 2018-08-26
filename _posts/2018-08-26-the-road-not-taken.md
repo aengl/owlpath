@@ -11,7 +11,7 @@ I took the one less traveled by,
 And that has made all the difference.
 
 ```
-(Excerpt from [The road not taken](https://www.poetryfoundation.org/poems/44272/the-road-not-taken) by Robert Frost
+(Excerpt from [The road not taken](https://www.poetryfoundation.org/poems/44272/the-road-not-taken) by Robert Frost)
 
 Some couple of months ago Lynn shared a poem with me which has stayed with me since. One of the reasons why this resonates with me so much is I think because I see more choices in life than most people I know: should I stay in Romania, or should I go somewhere else? Should I buy a house? Should I even rent one? 🙂
 
