@@ -10,6 +10,8 @@ Run:
 yarn update
 ```
 
+If you haven't logged into Instagram yet, you will have to do so now (in the browser window that was opened), then close the browser and re-run the command.
+
 ## Update Content
 
 To automatically update the site's content, run:
