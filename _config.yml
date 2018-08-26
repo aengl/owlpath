@@ -1,12 +1,8 @@
-# Site settings
 title: The Owl Path
 email: owl@cephea.de
 description: >-
   The stories and adventures of two migrating owls.
 baseurl: /owlpath
-url: https://aengl.github.io
-
-# Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed

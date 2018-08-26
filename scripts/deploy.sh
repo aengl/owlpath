@@ -1,14 +1,10 @@
 #!/usr/bin/env bash -e
 
-# Update calendar
-./scripts/writeScheduleData.js
+./scripts/update.sh
+
+# Add updated content & posts
 git add _data/schedule.yml
-
-# Update Instagram feed
-./scripts/crawlInstagram.js
 git add _data/instagram.yml
-
-# Add all posts
 git add _posts/*
 
 # Commit & push

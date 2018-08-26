@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -e
 
-./scripts/writeScheduleData.js
 bundle exec jekyll serve
