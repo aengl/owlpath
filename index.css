@@ -9,8 +9,12 @@ body {
   font-weight: 300;
   font-size: 20px;
   color: hsl(200, 100%, 12%);
-  margin: 2em;
+  margin: 0;
   padding: 0;
+}
+
+#content {
+  padding: 2em;
 }
 
 * {
@@ -38,6 +42,31 @@ img[data-gallery-source]:hover {
   body {
     margin: 0;
   }
+}
+
+/* ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^
+ * Footer
+ * ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^ */
+
+#footer {
+  border-top: 1px solid #ccc;
+  padding: 2em;
+  background-color: #fafafa;
+}
+
+#footer .content {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+#footer h1 {
+  margin: .2em 0;
+}
+
+#footer p {
+  margin: 0;
+  padding: 0;
 }
 
 /* ~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^
