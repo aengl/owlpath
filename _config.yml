@@ -9,8 +9,11 @@ plugins:
   - github-pages
 exclude:
   - .chromium
+  - .vscode
   - node_modules
+  - scripts
   - Gemfile
   - Gemfile.lock
   - package.json
+  - README.md
   - yarn.lock
