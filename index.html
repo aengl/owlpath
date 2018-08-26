@@ -2,40 +2,47 @@
 layout: default
 ---
 
-<ul id="schedule">
-  {% for event in site.data.schedule %}
-    <li>{{ event }}</li>
-  {% endfor %}
-</ul>
+<div id="content">
 
-<ul id="instagram">
-  {% for post in site.data.instagram %}
-    <li>
-      <img
-        srcset="{{ post.thumbnail }}"
-        data-gallery-source="{{ post.imageSourceSet }}"
-        data-gallery-caption="{{ post.description | markdownify }}" />
-    </li>
-  {% endfor %}
-</ul>
+  <ul id="schedule">
+    {% for event in site.data.schedule %}
+      <li>{{ event }}</li>
+    {% endfor %}
+  </ul>
 
-<ul id="posts">
-  {% for post in site.posts %}
-    <li>
-      <h1>{{ post.title | escape }}</h1>
-      <time>
-        {{ post.date | date_to_long_string }}
-      </time>
-      <div class="content">
-        {{ post.content }}
-      </div>
-    </li>
-  {% endfor %}
-</ul>
+  <ul id="instagram">
+    {% for post in site.data.instagram %}
+      <li>
+        <img
+          srcset="{{ post.thumbnail }}"
+          data-gallery-source="{{ post.imageSourceSet }}"
+          data-gallery-caption="{{ post.description | markdownify }}" />
+      </li>
+    {% endfor %}
+  </ul>
 
-<div id="gallery">
-  <div class="content">
-    <img />
-    <div class="caption"></div>
+  <ul id="posts">
+    {% for post in site.posts %}
+      <li>
+        <h1>{{ post.title | escape }}</h1>
+        <time>
+          {{ post.date | date_to_long_string }}
+        </time>
+        <div class="content">
+          {{ post.content }}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div id="gallery">
+    <div class="content">
+      <img />
+      <div class="caption"></div>
+    </div>
+    <script src="{{ site.baseurl }}/gallery.js"></script>
   </div>
+
 </div>
+
+{% include footer.html %}
