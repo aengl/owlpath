@@ -40,4 +40,6 @@ Run:
 yarn dev
 ```
 
+Jekyll will show errors about duplicate directories (even though they are excluded), but you can safely ignore those.
+
 Then browse http://localhost:4000/owlpath/
