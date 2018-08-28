@@ -1,6 +1,6 @@
 #!/usr/bin/env bash -e
 
-./scripts/update.sh
+./_scripts/update.sh
 
 # Add updated content & posts
 git add _data/schedule.yml

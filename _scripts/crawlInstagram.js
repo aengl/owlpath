@@ -70,11 +70,11 @@ async function crawl() {
       await page.click('a.coreSpriteRightPaginationArrow');
       await page.waitFor(1000);
     } catch (error) {
-      break;
+      return;
     }
-    await page.close();
-    await browser.close();
   }
+  await page.close();
+  await browser.close();
 
   return data;
 }

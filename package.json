@@ -11,9 +11,9 @@
     "puppeteer": "1.7.0"
   },
   "scripts": {
-    "dev": "scripts/serve.sh",
-    "deploy": "scripts/deploy.sh",
-    "cli": "scripts/cli.js",
-    "update": "scripts/update.sh"
+    "dev": "_scripts/serve.sh",
+    "deploy": "_scripts/deploy.sh",
+    "cli": "_scripts/cli.js",
+    "update": "_scripts/update.sh"
   }
 }

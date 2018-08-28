@@ -9,12 +9,9 @@ plugins:
   - jekyll-feed
   - github-pages
 exclude:
-  - .chromium
-  - .vscode
-  - node_modules
-  - scripts
   - Gemfile
   - Gemfile.lock
-  - package.json
   - README.md
+  - node_modules
+  - package.json
   - yarn.lock
