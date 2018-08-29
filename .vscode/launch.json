@@ -5,7 +5,7 @@
       "type": "node",
       "request": "launch",
       "name": "Crawl Instagram",
-      "program": "${workspaceFolder}/scripts/crawlInstagram.js",
+      "program": "${workspaceFolder}/_scripts/crawlInstagram.js",
       "console": "integratedTerminal",
       "skipFiles": [
         "${workspaceRoot}/node_modules/**/*.js",

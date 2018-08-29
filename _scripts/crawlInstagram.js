@@ -17,30 +17,32 @@ async function tryEval(element, selector, callback) {
   }
 }
 
-async function getPost(page) {
-  await page.waitFor('div[role=dialog] article', { timeout: 2000 });
-
-  // Extract image source
-  const imageSourceSet = await tryEval(
-    page,
-    'div[role=dialog] img[decoding]',
-    node => node.srcset
-  );
-
-  // Extract description
-  const description = await tryEval(
-    page,
-    'div[role=dialog] li span',
-    node => node.innerText
-  );
-
-  // Extract date
+async function getPost(post, page) {
+  await page.waitFor('div[role=dialog] article', { timeout: 5000 });
+  const url = page.url();
+  const dialog = await page.$('div[role=dialog]');
   const date = await page.$eval('time[datetime]', node => node.dateTime);
-
+  const description = await tryEval(dialog, 'li span', node => node.innerText);
+  const thumbnailSource = await post.$eval('img[src]', node => node.srcset);
+  const thumbnailSourceSet = await post.$eval('img[srcset]', node => node.srcset);
+  if (await page.$('video')) {
+    return {
+      url,
+      date,
+      description,
+      videoSource: await dialog.$eval('video', node => node.src),
+      thumbnailSource,
+      thumbnailSourceSet
+    }
+  }
   return {
+    url,
     date,
-    imageSourceSet,
     description,
+    imageSource: await dialog.$eval('img[decoding]', node => node.src),
+    imageSourceSet: await dialog.$eval('img[decoding]', node => node.srcset),
+    thumbnailSource,
+    thumbnailSourceSet
   };
 }
 
@@ -58,20 +60,22 @@ async function crawl() {
   }
 
   // Click through posts
-  const posts = await page.$$('a[href^="/p/"]');
+  const posts = (await page.$$('a[href^="/p/"]')).slice(0, 12);
   await posts[0].click();
   const data = [];
   for (const post of posts) {
-    data.push({
-      ...(await getPost(page)),
-      thumbnail: await post.$eval('img[srcset]', node => node.srcset),
-    });
     try {
-      await page.click('a.coreSpriteRightPaginationArrow');
-      await page.waitFor(1000);
+      data.push(await getPost(post, page));
     } catch (error) {
+      console.error(error);
       return;
     }
+    const next = await page.$('a.coreSpriteRightPaginationArrow');
+    if (!next) {
+      break;
+    }
+    await page.click('a.coreSpriteRightPaginationArrow');
+    await page.waitFor(1000);
   }
   await page.close();
   await browser.close();
@@ -81,7 +85,7 @@ async function crawl() {
 
 function saveData(data) {
   const postPath = path.resolve(__dirname, '..', '_data', 'instagram.yml');
-  fs.writeFileSync(postPath, yaml.dump(data.filter(d => !!d.imageSourceSet)));
+  fs.writeFileSync(postPath, yaml.dump(data));
 }
 
 crawl().then(saveData);

@@ -9,6 +9,8 @@ plugins:
   - jekyll-feed
   - github-pages
 exclude:
+  - .chromium
+  - .git
   - Gemfile
   - Gemfile.lock
   - README.md
