@@ -4,13 +4,19 @@ A website for migrating owls.
 
 ## Setup
 
-Run:
+1.  Install [`instant-liberation`](https://github.com/aengl/instant-liberation)
 
-```
-yarn update
-```
+1.  Log in to Instagram by running:
 
-If you haven't logged into Instagram yet, you will have to do so now (in the browser window that was opened), then close the browser and re-run the command.
+    ```
+    instalib login
+    ```
+
+1.  Run:
+
+    ```
+    yarn update
+    ```
 
 ## Update Content
 
