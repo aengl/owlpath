@@ -14,9 +14,9 @@ layout: default
   {% for post in site.data.instagram %}
     <li>
       <img
-        src="{{ site.baseurl }}/assets/instagram/{{ post.display_url }}"
-        data-gallery-source="{{ site.baseurl }}/assets/instagram/{{ post.display_url }}"
-        data-gallery-caption="{{ post.edge_media_to_caption.edges[0].node.text | markdownify }}" />
+        src="{{ site.baseurl }}/assets/instagram/{{ post.detail.display_url }}"
+        data-gallery-source="{{ site.baseurl }}/assets/instagram/{{ post.detail.display_url }}"
+        data-gallery-caption="{{ post.detail.edge_media_to_caption.edges[0].node.text | markdownify }}" />
     </li>
   {% endfor %}
   </ul>
