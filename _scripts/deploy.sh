@@ -3,6 +3,7 @@
 ./_scripts/update.sh
 
 # Add updated content & posts
+git add Gemfile.lock
 git add _data/schedule.yml
 git add _data/instagram.yml
 git add _posts/*
