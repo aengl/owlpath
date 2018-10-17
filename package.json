@@ -3,7 +3,7 @@
   "private": true,
   "devDependencies": {
     "caporal": "0.10.0",
-    "debug": "4.0.1",
+    "debug": "4.1.0",
     "ical.js": "1.2.2",
     "moment": "2.22.2",
     "node-fetch": "2.2.0"
