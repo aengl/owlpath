@@ -1,8 +1,5 @@
 {
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "es5",
   "editor.rulers": [80, 100],
-  "editor.formatOnSave": false,
   "editor.tabSize": 2,
   "files.exclude": {
     "_site/": true,
