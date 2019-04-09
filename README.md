@@ -4,18 +4,16 @@ A website for migrating owls.
 
 ## Setup
 
-1.  Install [`instant-liberation`](https://github.com/aengl/instant-liberation)
+1.  Install dependencies:
 
-1.  Log in to Instagram by running:
+    ```
+    yarn
+    ```
+
+1.  Log into Instagram by running:
 
     ```
     instalib login
-    ```
-
-1.  Run:
-
-    ```
-    yarn update
     ```
 
 ## Update Content
@@ -45,7 +43,5 @@ Run:
 ```
 yarn dev
 ```
-
-Jekyll will show errors about duplicate directories (even though they are excluded), but you can safely ignore those.
 
 Then browse http://localhost:4000/owlpath/
