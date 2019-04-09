@@ -464,15 +464,16 @@ inquirer@^1.0.2:
     strip-ansi "^3.0.0"
     through "^2.3.6"
 
-"instant-liberation@https://github.com/aengl/instant-liberation":
-  version "0.9.0"
-  resolved "https://github.com/aengl/instant-liberation#a62391dc070176a710e0195508487654818901b2"
+instant-liberation@0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/instant-liberation/-/instant-liberation-0.10.0.tgz#220a28d85e6576524bf4100e12b3022a6cb27285"
+  integrity sha512-+HqMg7cD7whpGbmckam6pZRCadN0d9920EfBuKMoKc0052MSqsAWQ3VS/pptPdZYgkrP3Z7iYWdyH6R/BbzRSQ==
   dependencies:
     caporal "1.1.0"
     debug "4.1.1"
     fs-extra "7.0.1"
     got "9.6.0"
-    js-yaml "3.13.0"
+    js-yaml "3.13.1"
     lodash "4.17.11"
     puppeteer "1.14.0"
 
@@ -503,10 +504,10 @@ isstream@0.1.x:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
-js-yaml@3.13.0:
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.0.tgz#38ee7178ac0eea2c97ff6d96fff4b18c7d8cf98e"
-  integrity sha512-pZZoSxcCYco+DIKBTimr67J6Hy+EYGZDY/HCWC+iAEA9h1ByhMXAIVUXMcMFpOCxQ/xjXmPI2MkDL5HRm5eFrQ==
+js-yaml@3.13.1:
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
+  integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
