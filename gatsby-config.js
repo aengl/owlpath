@@ -1,3 +1,5 @@
+const home = require('os').homedir();
+
 module.exports = {
   siteMetadata: {
     description: `The stories and adventures of two migrating owls.`,
@@ -11,6 +13,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-ical`,
       options: {
@@ -23,6 +26,14 @@ module.exports = {
       options: {
         path: `${__dirname}/posts`,
         name: `posts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${home}/Resilio Sync/Owl Path`,
+        name: `gallery`,
+        ignore: [`**/\.*`, `**/Icon*`],
       },
     },
     {

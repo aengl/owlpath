@@ -2,7 +2,7 @@
   "name": "owlpath",
   "private": true,
   "dependencies": {
-    "basiclightbox": "5.0.2",
+    "babel-plugin-styled-components": "1.10.0",
     "gatsby": "2.3.34",
     "gatsby-plugin-feed": "2.1.2",
     "gatsby-plugin-no-sourcemaps": "2.0.2",
@@ -15,9 +15,11 @@
     "gatsby-source-filesystem": "2.0.33",
     "gatsby-source-ical": "1.0.2",
     "gatsby-transformer-remark": "2.3.12",
+    "gatsby-transformer-sharp": "2.1.18",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-helmet": "5.2.0",
+    "react-images": "0.5.19",
     "styled-components": "4.2.0",
     "typeface-amita": "0.0.54",
     "typeface-laila": "0.0.72"
