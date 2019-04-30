@@ -1,23 +1,36 @@
 {
   "name": "owlpath",
   "private": true,
+  "dependencies": {
+    "basiclightbox": "5.0.2",
+    "gatsby": "2.3.34",
+    "gatsby-plugin-feed": "2.1.2",
+    "gatsby-plugin-no-sourcemaps": "2.0.2",
+    "gatsby-plugin-react-helmet": "3.0.12",
+    "gatsby-plugin-styled-components": "3.0.7",
+    "gatsby-source-filesystem": "2.0.33",
+    "gatsby-source-ical": "1.0.2",
+    "gatsby-transformer-remark": "2.3.12",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-helmet": "5.2.0",
+    "styled-components": "4.2.0",
+    "typeface-amita": "0.0.54",
+    "typeface-laila": "0.0.72"
+  },
   "devDependencies": {
-    "caporal": "1.1.0",
-    "debug": "4.1.1",
-    "ical.js": "1.3.0",
-    "instant-liberation": "0.10.0",
-    "moment": "2.24.0",
-    "node-fetch": "2.3.0",
-    "prettier": "1.16.4"
+    "prettier": "1.17.0"
   },
   "prettier": {
     "singleQuote": true,
     "trailingComma": "es5"
   },
   "scripts": {
-    "dev": "_scripts/serve.sh",
-    "deploy": "_scripts/deploy.sh",
-    "cli": "_scripts/cli.js",
-    "update": "_scripts/update.sh"
+    "now": "yarn clean && now",
+    "now-build": "gatsby build",
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
   }
 }
