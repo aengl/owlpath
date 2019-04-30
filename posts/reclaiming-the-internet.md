@@ -7,7 +7,7 @@ Ever since moving away from Sweden to experiment with life as a Digital Hobo, pe
 
 So we decided to jump on the social media bandwagon to keep everyone up-to-date. Which was not so great.
 
-![Analog Hobo](/bird.jpg)
+![Analog Hobo](/sand-warrior.jpg)
 
 Since we're all busy as hell, let me get straight to the point: social media isn't really cutting it for us. It's impersonal, intrusive, but most of all it doesn't encourage dialog: we went from people asking us, to people reading our feed and not talking to us at all anymore. 😱
 
