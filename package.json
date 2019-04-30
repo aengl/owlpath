@@ -25,6 +25,7 @@
     "typeface-laila": "0.0.72"
   },
   "devDependencies": {
+    "now": "15.0.11",
     "prettier": "1.17.0"
   },
   "prettier": {
@@ -37,6 +38,7 @@
     "build": "gatsby build",
     "dev": "gatsby develop",
     "start": "npm run develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "clean": "rm -rf .cache public"
   }
 }

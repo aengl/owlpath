@@ -1,4 +1,8 @@
-const home = require('os').homedir();
+const os = require('os');
+
+const galleryPath =
+  process.env.GALLERY_PATH || `${os.homedir()}/Resilio Sync/Owl Path`;
+console.log(`using gallery images at "${galleryPath}"`);
 
 module.exports = {
   siteMetadata: {
@@ -31,7 +35,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${home}/Resilio Sync/Owl Path`,
+        path: galleryPath,
         name: `gallery`,
         ignore: [`**/\.*`, `**/Icon*`],
       },
