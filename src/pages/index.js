@@ -1,8 +1,8 @@
 import { graphql } from 'gatsby';
 import React, { useState } from 'react';
+import Lightbox from 'react-images';
 import styled from 'styled-components';
 import { Layout } from '../components/Layout';
-import Lightbox from 'react-images';
 
 export default ({ data }) => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
