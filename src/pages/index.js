@@ -16,12 +16,13 @@ export default ({ data }) => {
       </Schedule>
 
       <Gallery>
-        {getGalleryThumbs(data).map(({ name, src }) => (
+        {getGalleryThumbs(data).map(({ name, src }, i) => (
           <li key={src}>
             <img
               src={src}
               alt={name}
               onClick={() => {
+                setImageIndex(i);
                 setLightboxOpen(true);
               }}
             />
@@ -86,7 +87,7 @@ export const query = graphql`
               src
               originalName
             }
-            full: resize(width: 1440) {
+            full: resize(height: 1280, quality: 70) {
               src
               originalName
             }
