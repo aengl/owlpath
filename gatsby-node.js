@@ -1,17 +1,18 @@
 const path = require(`path`);
-const schedule = require('./src/schedule');
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
-exports.onCreateNode = async ({ node, actions }) => {
+const component = path.resolve(`./src/templates/BlogPost.js`);
+
+exports.onCreateNode = async ({ node, actions, getNode }) => {
   if (node.internal.type === `MarkdownRemark`) {
-    actions.createNodeField({
-      name: 'layout',
-      node,
-      value: 'blog',
-    });
     actions.createNodeField({
       name: 'slug',
       node,
-      value: createFilePath({ node, getNode }),
+      value: createFilePath({
+        basePath: 'posts',
+        getNode,
+        node,
+      }),
     });
   }
 };
@@ -23,7 +24,6 @@ exports.createPages = async ({ graphql, actions }) => {
         edges {
           node {
             fields {
-              layout
               slug
             }
           }
@@ -35,9 +35,9 @@ exports.createPages = async ({ graphql, actions }) => {
     if (node.fields && node.fields.slug) {
       const { slug } = node.fields;
       actions.createPage({
-        path: slug,
-        component: path.resolve(`./src/templates/${node.fields.layout}.js`),
+        component,
         context: { slug },
+        path: slug,
       });
     }
   });

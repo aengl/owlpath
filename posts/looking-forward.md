@@ -1,6 +1,6 @@
 ---
-title: Looking forward...
-date: 2018-08-26T12:50:42.150Z
+title: Looking Forward...
+date: 2018-08-26
 ---
 
 > I shall be telling this with a sigh<br />
@@ -11,13 +11,13 @@ date: 2018-08-26T12:50:42.150Z
 
 (Excerpt from [The Road Not Taken](https://www.poetryfoundation.org/poems/44272/the-road-not-taken) by Robert Frost)
 
-![The Road Taken]({{ "/assets/2018-08-26-the-road-not-taken.jpg" | absolute_url }})
+![The Road Taken](/mountain-cami.jpg)
 
 Some couple of months ago Lynn shared a poem with me which has stayed with me since. One of the reasons why this resonates with me so much is I think because I see more choices in life than most people I know: should I stay in Romania, or should I go somewhere else? Should I buy a house? Should I even rent one? 🙂
 
 The level of disconnect between the lifestyle we're experimenting with right now (travelling as digital nomads) and what some of my family consider choices in life is best described by the number of times I was asked:
 
->  But... you are going to settle one day. RIGHT?
+> But... you are going to settle one day. RIGHT?
 
 I'm not even sure we're talking about not being able to see the choices. I think it might be more in the direction of not seeing the point of experimentation. Or following the good old romanian saying: Experimentation costs money. 🤔 Actually there isn't one... but it feels like there should be.
 

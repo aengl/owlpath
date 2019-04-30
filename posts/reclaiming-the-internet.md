@@ -1,13 +1,13 @@
 ---
 title: Reclaiming the Internet
-date: 2018-08-21T12:44:24.011Z
+date: 2018-08-21
 ---
 
 Ever since moving away from Sweden to experiment with life as a Digital Hobo, people have frequently asked us how things are working out for us. Which is great! 🧡
 
 So we decided to jump on the social media bandwagon to keep everyone up-to-date. Which was not so great.
 
-![Analog Hobo]({{ "/assets/2018-08-21-intro.jpg" | absolute_url }})
+![Analog Hobo](/bird.jpg)
 
 Since we're all busy as hell, let me get straight to the point: social media isn't really cutting it for us. It's impersonal, intrusive, but most of all it doesn't encourage dialog: we went from people asking us, to people reading our feed and not talking to us at all anymore. 😱
 
