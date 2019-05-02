@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import React, { useState } from 'react';
-import Lightbox from 'react-images';
+import Carousel, { Modal, ModalGateway } from 'react-images';
 import styled from 'styled-components';
 import { Layout } from '../components/Layout';
 
@@ -14,12 +14,11 @@ export default ({ data }) => {
           <li key={summary}>{summary}</li>
         ))}
       </Schedule>
-
       <Gallery>
-        {getGalleryThumbs(data).map(({ name, src }, i) => (
-          <li key={src}>
+        {getGalleryThumbs(data).map(({ name, source }, i) => (
+          <li key={source}>
             <img
-              src={src}
+              src={source}
               alt={name}
               onClick={() => {
                 setImageIndex(i);
@@ -29,23 +28,21 @@ export default ({ data }) => {
           </li>
         ))}
       </Gallery>
-      <Lightbox
-        images={getGalleryImages(data)}
-        isOpen={lightboxOpen}
-        currentImage={imageIndex}
-        onClickPrev={() => {
-          setImageIndex(imageIndex - 1);
-        }}
-        onClickNext={() => {
-          setImageIndex(imageIndex + 1);
-        }}
-        onClose={() => {
-          setLightboxOpen(false);
-        }}
-        backdropClosesModal={true}
-        showThumbnails={true}
-      />
-
+      <ModalGateway>
+        {lightboxOpen ? (
+          <Modal
+            onClose={() => {
+              setLightboxOpen(false);
+            }}
+          >
+            <Carousel
+              currentIndex={imageIndex}
+              views={getGalleryImages(data)}
+            />
+          </Modal>
+        ) : null}
+      </ModalGateway>
+      }
       <Posts>
         {getPosts(data).map(({ html, slug, title }) => (
           <li key={slug}>
@@ -132,14 +129,14 @@ function getScheduleEvents(data) {
 function getGalleryThumbs(data) {
   return data.gallery.edges.map(({ node }) => ({
     name: node.childImageSharp.thumb.originalName,
-    src: node.childImageSharp.thumb.src,
+    source: node.childImageSharp.thumb.src,
   }));
 }
 
 function getGalleryImages(data) {
   return data.gallery.edges.map(({ node }) => ({
     name: node.childImageSharp.full.originalName,
-    src: node.childImageSharp.full.src,
+    source: node.childImageSharp.full.src,
   }));
 }
 
