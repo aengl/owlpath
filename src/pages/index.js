@@ -49,9 +49,7 @@ export default ({ data }) => {
       <Posts>
         {getPosts(data).map(({ html, slug, title }) => (
           <li key={slug}>
-            <a href={slug}>
-              <h1>{title}</h1>
-            </a>
+            <h1>{title}</h1>
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </li>
         ))}
