@@ -42,7 +42,6 @@ export default ({ data }) => {
           </Modal>
         ) : null}
       </ModalGateway>
-      }
       <Posts>
         {getPosts(data).map(({ html, slug, title }) => (
           <li key={slug}>
@@ -180,7 +179,7 @@ const Gallery = styled.ul`
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
-  margin: 5em auto 5em;
+  margin: 4em auto 4em;
   padding: 0;
   li {
     height: 220px;
@@ -192,12 +191,7 @@ const Gallery = styled.ul`
   }
   @media only screen and (max-width: 800px) {
     li {
-      width: 100%;
-      height: auto;
-    }
-    img {
-      width: inherit;
-      height: auto;
+      height: 28vw;
     }
   }
 `;
@@ -222,8 +216,5 @@ const Posts = styled.ul`
   time {
     font-size: 0.9em;
     color: var(--primary-color-faded);
-  }
-  @media only screen and (max-width: 800px) {
-    margin: 1.2em;
   }
 `;

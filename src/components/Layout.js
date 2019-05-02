@@ -70,10 +70,15 @@ const GlobalStyle = createGlobalStyle`
   img[data-gallery-source]:hover {
     cursor: pointer;
   }
+  @media only screen and (max-width: 800px) {
+    body {
+      font-size: 16px;
+    }
+  }
 `;
 
 const Main = styled.main`
-  padding: 2em;
+  padding: 5%;
 `;
 
 const Footer = styled.footer`
