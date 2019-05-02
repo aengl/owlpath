@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     description: `The stories and adventures of two migrating owls.`,
     siteName: `The Owl Path`,
-    siteUrl: `http://owl.cephea.de/`,
+    siteUrl: `https://owlpath.aen.now.sh`,
     title: `The Owl Path`,
   },
   plugins: [
