@@ -76,11 +76,15 @@ export const query = graphql`
     # Gallery
     gallery: allFile(
       sort: { fields: [modifiedTime], order: DESC }
-      filter: { extension: { in: ["jpg"] } }
+      filter: {
+        extension: { in: ["jpg"] }
+        sourceInstanceName: { eq: "gallery" }
+      }
     ) {
       edges {
         node {
           extension
+          sourceInstanceName
           modifiedTime
           childImageSharp {
             thumb: resize(width: 440, height: 440) {
