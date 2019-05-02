@@ -33,12 +33,13 @@
     "trailingComma": "es5"
   },
   "scripts": {
-    "now": "yarn clean && now",
+    "now-dev": "gatsby develop -p $PORT",
     "now-build": "gatsby build",
     "build": "gatsby build",
     "dev": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "rm -rf .cache public"
+    "clean": "rm -rf .cache public",
+    "deploy": "./deploy.sh"
   }
 }
