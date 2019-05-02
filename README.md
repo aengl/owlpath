@@ -2,46 +2,30 @@
 
 A website for migrating owls.
 
-## Setup
+## Deploying
 
-1.  Install dependencies:
-
-    ```
-    yarn
-    ```
-
-1.  Log into Instagram by running:
-
-    ```
-    instalib login
-    ```
-
-## Update Content
-
-To automatically update the site's content, run:
+The website content will automatically be updated when deploying via:
 
 ```
 yarn deploy
 ```
 
-## Writing a New Post
+The gallery images are assumed to live at `~/Resilio Sync/Owl Path`, but the path can be overwritten using the `GALLERY_PATH` environment variable (no trailing slash!).
 
-Run:
+## Developing
 
-```
-yarn cli post "my-title-slug"
-```
-
-Then, edit the new file generated in `_posts` and run `yarn deploy`.
-
-The slug has no pratical meaning other than making the files in `_posts` easier to recognise.
-
-## Serve Locally
-
-Run:
+To run the site in dev mode, run either:
 
 ```
 yarn dev
 ```
 
-Then browse http://localhost:4000/owlpath/
+or
+
+```
+yarn now dev
+```
+
+## Writing a New Post
+
+Simply add a new markdown file in the `posts` folder. Linked assets will automatically be rewritten.

@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "name": "owlpath",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    }
+  ],
+  "build": {
+    "env": {
+      "GALLERY_PATH": "tmp"
+    }
+  },
+  "routes": [
+    {
+      "src": "/[^.]*\\.ttf",
+      "headers": { "cache-control": "s-maxage=31536000" }
+    }
+  ],
+  "github": {
+    "enabled": false
+  }
+}
