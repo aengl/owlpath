@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "babel-plugin-styled-components": "1.10.0",
-    "gatsby": "2.4.3",
+    "gatsby": "2.5.5",
     "gatsby-plugin-feed": "2.2.0",
     "gatsby-plugin-no-sourcemaps": "2.0.2",
     "gatsby-plugin-react-helmet": "3.0.12",
@@ -12,8 +12,8 @@
     "gatsby-remark-copy-linked-files": "2.0.12",
     "gatsby-remark-images": "3.0.11",
     "gatsby-remark-smartypants": "2.0.9",
-    "gatsby-source-filesystem": "2.0.33",
-    "gatsby-source-ical": "1.0.2",
+    "gatsby-source-filesystem": "2.0.36",
+    "gatsby-source-ical": "1.1.0",
     "gatsby-transformer-remark": "2.3.12",
     "gatsby-transformer-sharp": "2.1.19",
     "react": "16.8.6",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "now": "15.2.0",
-    "prettier": "1.17.0"
+    "prettier": "1.17.1"
   },
   "prettier": {
     "singleQuote": true,
