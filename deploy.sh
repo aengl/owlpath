@@ -6,6 +6,6 @@
 yarn clean
 mkdir -p tmp
 cp ${GALLERY_PATH:=~/Resilio\ Sync/Owl\ Path}/* tmp/
-yarn now
+yarn now --target staging
 rm tmp/*
 rmdir tmp
