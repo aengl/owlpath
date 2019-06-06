@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
 
-# The now builder doesn't have access to our gallery images on Resilio, so we
-# copy them into a tmp dir, build and remove it afterwards
-
 yarn clean
+
+# The now builder doesn't have access to our gallery images on Resilio, so we
+# copy them into a tmp dir within the build context
 mkdir -p tmp
 cp ${GALLERY_PATH:=~/Resilio\ Sync/Owl\ Path}/* tmp/
-yarn now --target staging
+
+# Switch to teamturtle scope and deploy
+npx now switch teamturtle
+npx now --target staging
+
+# Clean up
 rm tmp/*
 rmdir tmp
