@@ -1,5 +1,5 @@
 ---
-title: Cami and Lynn's Anime recommendations
+title: Cami & Lynn's Anime recommendations
 date: 2019-06-06
 ---
 
@@ -17,7 +17,8 @@ recommendations that you can watch if you find yourself in need of random
 entertainment
 
 ### My Love Story!!
-*Slice of Life | Romance*
+
+_Slice of Life | Romance_
 
 If you ever find yourself in a need for a pick me up, this anime is going to do
 the trick. It's so uplifting and sweet, it's addictive to watch.
@@ -32,7 +33,8 @@ cheesy title, the anime is a lot more than it sounds like.
 Image source: [diehardgamefan.com](http://diehardgamefan.com/2015/08/05/diehard-animefan-vol-2-my-love-story-monster-musume-god-eater-bakemonogatari/)
 
 ### March comes in like a lion
-*Slice of Life | Shogi*
+
+_Slice of Life | Shogi_
 
 I find it fascinating how anime can take some of the most boring sounding
 subjects you can think of ([Shōgi](https://en.wikipedia.org/wiki/Shogi) in this
@@ -42,9 +44,9 @@ into my absolute favorite anime ♥.
 ![March comes in like a lion - Shogi lesson](anime-march-lion.jpg)
 Image source: [crunchyroll.com](https://www.crunchyroll.com/anime-feature/2016/11/26/feature-why-it-works-march-comes-in-like-a-lion-explains-shogi)
 
-
 ### Shokugeki no Souma
-*Food*
+
+_Food_
 
 Speaking of anime centered around seemingly boring subjects that are turned
 into masterpieces of entertainment, Shokugeki no Souma turns cooking into
@@ -54,7 +56,8 @@ the best movie watching experience ever. Prepare to be dazzled, bring tacos 🌮
 Image source: [viz.com](https://www.viz.com/food-wars)
 
 ### Yuru Camp
-*Camping | Food*
+
+_Camping | Food_
 
 An anime about... camping. Be prepared though, when you're through with it,
 it's going to be hard to go through that camping section of the store without
@@ -67,7 +70,8 @@ best merchandise! The anime is also known as Laid-Back Camp.
 Image source: [灌木](https://steamcommunity.com/id/imshrub/images/?appid=767)
 
 ### Your lie in April
-*Music | Drama*
+
+_Music | Drama_
 
 The fact that we recommend this anime despite the fact that it's a drama should
 speak for itself. You see, we generally heavily prefer anime that makes us feel
