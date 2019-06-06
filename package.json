@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "babel-plugin-styled-components": "1.10.0",
-    "gatsby": "2.8.2",
+    "gatsby": "2.8.5",
     "gatsby-plugin-feed": "2.2.2",
     "gatsby-plugin-no-sourcemaps": "2.0.2",
     "gatsby-plugin-react-helmet": "3.0.12",
@@ -20,12 +20,12 @@
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1",
     "react-images": "1.0.0-alpha.5",
-    "styled-components": "4.2.1",
+    "styled-components": "4.3.0",
     "typeface-amita": "0.0.54",
     "typeface-laila": "0.0.72"
   },
   "devDependencies": {
-    "now": "15.3.0",
+    "now": "15.4.0",
     "prettier": "1.17.1"
   },
   "prettier": {
