@@ -19,7 +19,7 @@ export const Layout = ({ children, header }) => {
     <>
       <GlobalStyle />
       <header>{header}</header>
-      <Main>{children}</Main>
+      <main>{children}</main>
       <Footer>
         <FooterContent>
           <p>You are reading</p>
@@ -55,6 +55,9 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     line-height: 1.4;
   }
+  h2, h3, h4 {
+    font-family: 'Amita', sans-serif;
+  }
   a {
     color: black;
     text-decoration: none;
@@ -75,10 +78,6 @@ const GlobalStyle = createGlobalStyle`
       font-size: 16px;
     }
   }
-`;
-
-const Main = styled.main`
-  padding: 5%;
 `;
 
 const Footer = styled.footer`

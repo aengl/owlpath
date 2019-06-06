@@ -1,58 +1,32 @@
 import { graphql } from 'gatsby';
-import React, { useState } from 'react';
-import Carousel, { Modal, ModalGateway } from 'react-images';
+import React from 'react';
 import styled from 'styled-components';
 import { Layout } from '../components/Layout';
 
-export default ({ data }) => {
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [imageIndex, setImageIndex] = useState(0);
-  return (
-    <Layout>
-      <Schedule>
-        {getScheduleEvents(data).map(({ summary }) => (
-          <li key={summary}>{summary}</li>
-        ))}
-      </Schedule>
-      <Gallery>
-        {getGalleryThumbs(data).map(({ name, source }, i) => (
-          <li key={source}>
-            <img
-              src={source}
-              alt={name}
-              onClick={() => {
-                setImageIndex(i);
-                setLightboxOpen(true);
-              }}
-            />
-          </li>
-        ))}
-      </Gallery>
-      <ModalGateway>
-        {lightboxOpen ? (
-          <Modal
-            onClose={() => {
-              setLightboxOpen(false);
-            }}
-          >
-            <Carousel
-              currentIndex={imageIndex}
-              views={getGalleryImages(data)}
-            />
-          </Modal>
-        ) : null}
-      </ModalGateway>
-      <Posts>
-        {getPosts(data).map(({ html, slug, title }) => (
-          <li key={slug}>
-            <h1>{title}</h1>
-            <div dangerouslySetInnerHTML={{ __html: html }} />
-          </li>
-        ))}
-      </Posts>
-    </Layout>
-  );
-};
+export default ({ data }) => (
+  <Layout>
+    <Schedule>
+      {getScheduleEvents(data).map(({ summary }) => (
+        <li key={summary}>{summary}</li>
+      ))}
+    </Schedule>
+    <Gallery>
+      {getGalleryThumbs(data).map(({ name, source }, i) => (
+        <li key={source}>
+          <img src={source} alt={name} />
+        </li>
+      ))}
+    </Gallery>
+    <Posts>
+      {getPosts(data).map(({ html, slug, title }) => (
+        <li key={slug}>
+          <h1>{title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </li>
+      ))}
+    </Posts>
+  </Layout>
+);
 
 export const query = graphql`
   {
@@ -81,11 +55,7 @@ export const query = graphql`
           sourceInstanceName
           modifiedTime
           childImageSharp {
-            thumb: resize(width: 440, height: 440) {
-              src
-              originalName
-            }
-            full: resize(height: 1280, quality: 70) {
+            thumb: resize(height: 800, quality: 70) {
               src
               originalName
             }
@@ -132,13 +102,6 @@ function getGalleryThumbs(data) {
   }));
 }
 
-function getGalleryImages(data) {
-  return data.gallery.edges.map(({ node }) => ({
-    name: node.childImageSharp.full.originalName,
-    source: node.childImageSharp.full.src,
-  }));
-}
-
 function getPosts(data) {
   return data.posts.edges.map(({ node }) => ({
     html: node.html,
@@ -174,25 +137,21 @@ const Schedule = styled.ul`
 
 const Gallery = styled.ul`
   display: flex;
-  max-width: 900px;
+  height: 440px;
   list-style: none;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  margin: 4em auto 4em;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 0;
   padding: 0;
+  border: 1px solid black;
+  border-width: 1px 0 1px 0;
   li {
-    height: 220px;
-    margin: 1px;
-    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    border-right: 5px solid black;
   }
   img {
-    height: inherit;
-  }
-  @media only screen and (max-width: 800px) {
-    li {
-      height: 28vw;
-    }
+    height: 100%;
   }
 `;
 
@@ -200,7 +159,7 @@ const Posts = styled.ul`
   max-width: 800px;
   list-style: none;
   margin: auto;
-  padding: 0;
+  padding: 5%;
   li {
     margin-top: 4em;
     font-size: 1em;
