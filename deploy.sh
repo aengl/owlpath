@@ -8,7 +8,6 @@ mkdir -p tmp
 cp ${GALLERY_PATH:=~/Resilio\ Sync/Owl\ Path}/* tmp/
 
 # Switch to teamturtle scope and deploy
-npx now switch teamturtle
 npx now --target staging
 
 # Clean up

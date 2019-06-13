@@ -1,6 +1,9 @@
 {
   "version": 2,
   "name": "owlpath",
+  "scope": "teamturtle",
+  "alias": "owl.si",
+  "regions": ["bru"],
   "builds": [
     {
       "src": "package.json",
