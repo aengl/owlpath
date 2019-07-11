@@ -45,7 +45,7 @@ export const query = graphql`
     gallery: allFile(
       sort: { fields: [modifiedTime], order: DESC }
       filter: {
-        extension: { in: ["jpg"] }
+        extension: { in: ["jpg", "jpeg"] }
         sourceInstanceName: { eq: "gallery" }
       }
     ) {
