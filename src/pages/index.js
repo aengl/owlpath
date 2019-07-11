@@ -143,6 +143,7 @@ const Gallery = styled.ul`
   list-style: none;
   overflow-x: scroll;
   overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
   margin: 0;
   padding: 0;
   border: 1px solid black;
