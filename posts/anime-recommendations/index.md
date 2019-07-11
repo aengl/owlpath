@@ -1,5 +1,5 @@
 ---
-title: Cami & Lynn's Anime recommendations
+title: Anime Recommendations
 date: 2019-06-06
 ---
 
@@ -16,7 +16,7 @@ review list of our favorite anime, but rather a list of our personal
 recommendations that you can watch if you find yourself in need of random
 entertainment
 
-### My Love Story!!
+## My Love Story!!
 
 _Slice of Life | Romance_
 
@@ -29,22 +29,22 @@ It's just like an excellent cake, you shouldn't overdo it, but man are those
 moments when you indulge to be enjoyed! 😊Don't let yourself be put off by the
 cheesy title, the anime is a lot more than it sounds like.
 
-![My Love Story!! screenshot Takeo and Yamato thumbs up](anime-my-love.jpg)
-Image source: [diehardgamefan.com](http://diehardgamefan.com/2015/08/05/diehard-animefan-vol-2-my-love-story-monster-musume-god-eater-bakemonogatari/)
+![My Love Story!! screenshot Takeo and Yamato thumbs up](my-love.jpg)
+_Image source: [diehardgamefan.com](http://diehardgamefan.com/2015/08/05/diehard-animefan-vol-2-my-love-story-monster-musume-god-eater-bakemonogatari/)_
 
-### March comes in like a lion
+## March comes in like a lion
 
 _Slice of Life | Shogi_
 
 I find it fascinating how anime can take some of the most boring sounding
 subjects you can think of ([Shōgi](https://en.wikipedia.org/wiki/Shogi) in this
-case - kind of, sort of, similar to chess in very broad terms)) and turn them
-into my absolute favorite anime ♥.
+case - kind of, sort of, similar to chess in very broad terms) and turn them
+into my absolute favorite anime. 🧡
 
-![March comes in like a lion - Shogi lesson](anime-march-lion.jpg)
-Image source: [crunchyroll.com](https://www.crunchyroll.com/anime-feature/2016/11/26/feature-why-it-works-march-comes-in-like-a-lion-explains-shogi)
+![March comes in like a lion - Shogi lesson](march-lion.jpg)
+_Image source: [crunchyroll.com](https://www.crunchyroll.com/feature/2016/11/26/feature-why-it-works-march-comes-in-like-a-lion-explains-shogi)_
 
-### Shokugeki no Souma
+## Shokugeki no Souma
 
 _Food_
 
@@ -52,10 +52,10 @@ Speaking of anime centered around seemingly boring subjects that are turned
 into masterpieces of entertainment, Shokugeki no Souma turns cooking into
 the best movie watching experience ever. Prepare to be dazzled, bring tacos 🌮.
 
-![Shokugeki no Souma - Soma preparing to cook](anime-shokugeki.jpg)
-Image source: [viz.com](https://www.viz.com/food-wars)
+![Shokugeki no Souma - Soma preparing to cook](shokugeki.jpg)
+_Image source: [viz.com](https://www.viz.com/food-wars)_
 
-### Yuru Camp
+## Yuru Camp
 
 _Camping | Food_
 
@@ -66,10 +66,10 @@ episode is going to make you feel happy. Also, if you're going to Tokyo soon,
 get some space in the luggage and do a tour in Akihabara - these guys have the
 best merchandise! The anime is also known as Laid-Back Camp.
 
-![Yuru Camp - Nadeshiko with a Ramen cup](anime-yuru-camp.gif)
-Image source: [灌木](https://steamcommunity.com/id/imshrub/images/?appid=767)
+![Yuru Camp - Nadeshiko with a Ramen cup](yuru-camp.gif)
+_Image source: [灌木](https://steamcommunity.com/id/imshrub/images/?appid=767)_
 
-### Your lie in April
+## Your lie in April
 
 _Music | Drama_
 
@@ -79,5 +79,5 @@ happy watching it. Do not watch this anime if you need to recover your spirits,
 but if you have some slack emotional energy, I can promise you, you will not
 regret picking it up!
 
-![Your lie in April - Kousei and Kaori looking sideways](anime-lie-in-april.jpg)
-Image source: [Overly animated](http://www.overlyanimated.com/2017/04/20/your-lie-in-april-is-gorgeous-sad-and-realistic/)
+![Your lie in April - Kousei and Kaori looking sideways](lie-in-april.jpg)
+_Image source: [Overly animated](http://www.overlyanimated.com/2017/04/20/your-lie-in-april-is-gorgeous-sad-and-realistic/)_

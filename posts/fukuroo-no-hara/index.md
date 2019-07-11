@@ -1,5 +1,5 @@
 ---
-title: Fukurō no hara
+title: Fukurō no Hara
 date: 2019-05-02
 ---
 
