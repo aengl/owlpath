@@ -135,7 +135,7 @@ const Schedule = styled.ul`
     content: 'Soon:';
     margin-top: 1em;
   }
-  @media (orientation: landscape) {
+  @media (max-height: 700px) and (orientation: landscape) {
     display: none;
   }
 `;
@@ -160,7 +160,7 @@ const Gallery = styled.ul`
   img {
     height: 100%;
   }
-  @media (orientation: landscape) {
+  @media (max-height: 700px) and (orientation: landscape) {
     height: 100vh;
     max-height: 100vh;
   }
@@ -174,8 +174,10 @@ const Posts = styled.ul`
   li {
     margin-top: 2em;
     font-size: 1em;
-    text-align: justify;
     color: hsl(200, 20%, 30%);
+  }
+  p {
+    text-align: justify;
   }
   a {
     display: inline-block;
@@ -184,7 +186,7 @@ const Posts = styled.ul`
     font-size: 0.9em;
     color: var(--primary-color-faded);
   }
-  @media (orientation: landscape) {
+  @media (max-height: 700px) and (orientation: landscape) {
     display: none;
   }
 `;

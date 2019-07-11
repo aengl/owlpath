@@ -20,15 +20,13 @@ export const Layout = ({ children, header }) => {
       <GlobalStyle />
       <header>{header}</header>
       <main>{children}</main>
-      <Footer>
-        <FooterContent>
-          <p>You are reading</p>
-          <a href="/">
-            <h1>{site.title}</h1>
-          </a>
-          <p>{site.description}</p>
-        </FooterContent>
-      </Footer>
+      <footer>
+        <p>You are reading</p>
+        <a href="/">
+          <h1>{site.title}</h1>
+        </a>
+        <p>{site.description}</p>
+      </footer>
     </>
   );
 };
@@ -38,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
     --primary-color: hsl(200, 100%, 12%);
     --primary-color-faded: hsla(200, 100%, 12%, 0.4);
     --primary-color-superfaded: hsla(200, 100%, 12%, 0.2);
-    --font-size-small: 16px;
+    --font-size-small: .8rem;
   }
   body {
     font-family: 'Laila', serif;
@@ -76,27 +74,31 @@ const GlobalStyle = createGlobalStyle`
   img[data-gallery-source]:hover {
     cursor: pointer;
   }
+  footer {
+    max-width: 900px;
+    margin: auto;
+    padding: 2em;
+    border-top: 1px solid #ccc;
+    background-color: #fafafa;
+    text-align: center;
+    p {
+      margin: 0;
+    }
+    h1 {
+      margin: 0.2em 0;
+    }
+  }
   @media only screen and (max-width: 800px) {
     body {
       font-size: 16px;
     }
   }
-`;
-
-const Footer = styled.footer`
-  border-top: 1px solid #ccc;
-  padding: 2em;
-  background-color: #fafafa;
-`;
-
-const FooterContent = styled.div`
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-  p {
-    margin: 0;
-  }
-  h1 {
-    margin: 0.2em 0;
+  @media (max-height: 700px) and (orientation: landscape) {
+    footer {
+      display: none;
+    }
+    body {
+      background-color: black;
+    }
   }
 `;

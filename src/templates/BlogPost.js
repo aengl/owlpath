@@ -38,6 +38,9 @@ const Wrapper = styled.div`
   h2 {
     margin: 2em 0 0 0;
   }
+  p {
+    text-align: justify;
+  }
   img {
     width: 100%;
     display: block;
