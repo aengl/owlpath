@@ -32,12 +32,14 @@ export const query = graphql`
 `;
 
 const Wrapper = styled.div`
-  margin: 2em auto;
   max-width: 900px;
+  margin: auto;
+  padding: 5%;
   h2 {
     margin: 2em 0 0 0;
   }
   img {
+    width: 100%;
     display: block;
   }
   img + em,
