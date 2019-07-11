@@ -23,7 +23,9 @@ export const Layout = ({ children, header }) => {
       <Footer>
         <FooterContent>
           <p>You are reading</p>
-          <h1>{site.title}</h1>
+          <a href="/">
+            <h1>{site.title}</h1>
+          </a>
           <p>{site.description}</p>
         </FooterContent>
       </Footer>
@@ -36,6 +38,7 @@ const GlobalStyle = createGlobalStyle`
     --primary-color: hsl(200, 100%, 12%);
     --primary-color-faded: hsla(200, 100%, 12%, 0.4);
     --primary-color-superfaded: hsla(200, 100%, 12%, 0.2);
+    --font-size-small: 16px;
   }
   body {
     font-family: 'Laila', serif;
@@ -59,10 +62,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Amita', sans-serif;
   }
   a {
-    color: black;
+    color: #cc7000;
     text-decoration: none;
   }
-  p a {
+  a:hover {
     color: darkorange;
   }
   blockquote {

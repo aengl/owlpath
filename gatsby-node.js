@@ -18,7 +18,7 @@ exports.onCreateNode = async ({ node, actions, getNode }) => {
 };
 
 exports.createPages = async ({ graphql, actions }) => {
-  const result = await graphql(`
+  const blogPosts = await graphql(`
     {
       allMarkdownRemark {
         edges {
@@ -31,14 +31,14 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `);
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    if (node.fields && node.fields.slug) {
-      const { slug } = node.fields;
+  blogPosts.data.allMarkdownRemark.edges
+    .filter(({ node }) => node.fields && node.fields.slug)
+    .map(({ node }) => node.fields)
+    .forEach(({ slug }) => {
       actions.createPage({
+        path: slug,
         component,
         context: { slug },
-        path: slug,
       });
-    }
-  });
+    });
 };

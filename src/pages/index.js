@@ -18,10 +18,12 @@ export default ({ data }) => (
       ))}
     </Gallery>
     <Posts>
-      {getPosts(data).map(({ html, slug, title }) => (
+      {getPosts(data).map(({ excerpt, slug, title }) => (
         <li key={slug}>
-          <h1>{title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
+          <a href={slug}>
+            <h1>{title}</h1>
+          </a>
+          <p>{excerpt}</p>
         </li>
       ))}
     </Posts>
@@ -78,7 +80,7 @@ export const query = graphql`
             date
             title
           }
-          html
+          excerpt(pruneLength: 500)
         }
       }
     }
@@ -104,7 +106,7 @@ function getGalleryThumbs(data) {
 
 function getPosts(data) {
   return data.posts.edges.map(({ node }) => ({
-    html: node.html,
+    excerpt: node.excerpt,
     slug: node.fields.slug,
     title: node.frontmatter.title,
   }));
@@ -161,16 +163,13 @@ const Posts = styled.ul`
   margin: auto;
   padding: 5%;
   li {
-    margin-top: 4em;
+    margin-top: 2em;
     font-size: 1em;
     text-align: justify;
     color: hsl(200, 20%, 30%);
   }
-  img {
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
+  a {
+    display: inline-block;
   }
   time {
     font-size: 0.9em;
