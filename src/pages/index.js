@@ -135,11 +135,15 @@ const Schedule = styled.ul`
     content: 'Soon:';
     margin-top: 1em;
   }
+  @media (orientation: landscape) {
+    display: none;
+  }
 `;
 
 const Gallery = styled.ul`
   display: flex;
   height: 440px;
+  max-height: 70vw;
   list-style: none;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -155,6 +159,10 @@ const Gallery = styled.ul`
   }
   img {
     height: 100%;
+  }
+  @media (orientation: landscape) {
+    height: 100vh;
+    max-height: 100vh;
   }
 `;
 
@@ -175,5 +183,8 @@ const Posts = styled.ul`
   time {
     font-size: 0.9em;
     color: var(--primary-color-faded);
+  }
+  @media (orientation: landscape) {
+    display: none;
   }
 `;
