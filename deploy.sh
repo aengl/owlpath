@@ -6,7 +6,7 @@ mkdir -p tmp
 cp ${GALLERY_PATH:=~/Resilio\ Sync/Owl\ Path}/* tmp/
 
 # Deploy to production
-npx now --target production
+npx now --prod
 
 # Clean up
 rm tmp/*
