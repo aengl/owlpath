@@ -1,7 +1,8 @@
 const os = require('os');
 
 const galleryPath =
-  process.env.GALLERY_PATH || `${os.homedir()}/Resilio Sync/Owl Path`;
+  process.env.GALLERY_PATH ||
+  `${os.homedir()}/Library/Mobile Documents/com~apple~CloudDocs/Owl Path`;
 console.log(`using gallery images at "${galleryPath}"`);
 
 module.exports = {

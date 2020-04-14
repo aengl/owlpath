@@ -4,7 +4,7 @@ import { Layout } from '../components/Layout';
 import styled from 'styled-components';
 
 export default ({ data }) => {
-  const { date, title } = data.post.frontmatter;
+  const { title } = data.post.frontmatter;
   const { html } = data.post;
   return (
     <Layout>
