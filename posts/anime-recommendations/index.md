@@ -81,3 +81,15 @@ regret picking it up!
 
 ![Your lie in April - Kousei and Kaori looking sideways](lie-in-april.jpg)
 _Image source: [Overly animated](http://www.overlyanimated.com/2017/04/20/your-lie-in-april-is-gorgeous-sad-and-realistic/)_
+
+## Fruits Basket
+
+_Slice of Life_
+
+A girl that's never quite fit into her family, finds her place in a rather
+unexpected household. A story about friendship, and having a positive outlook on
+life, sometimes to the point of naivity, but holding on to it, because it's what
+you believe in.
+
+![Fruits basket - Tohru sleeping under the Sakura](fruits-basket.jpg)
+_Image source: [newtypezone.blogspot.com](https://newtypezone.blogspot.com/p/orions-anime-reviews.html)_
